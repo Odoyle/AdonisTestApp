@@ -11,5 +11,5 @@
 |
 */
 const Route = use('Route')
-
+Route.resource('doorEvents', 'DoorEventsController').only(['store', 'index'])
 Route.get('/', 'HomeController.index')
